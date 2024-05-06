@@ -69,11 +69,26 @@ export default function HeroCard(props) {
 				show = {showModal}
 				closeModal = {() => setShowModal(false)}
 			>
-				<h1>Name: {modalContents.name}</h1>
-				<p>Bio: {modalContents.bio}</p>
-				<p>height: {modalContents.height}</p>
-				<p>weight: {modalContents.weight}</p>
-				<p>gender: {modalContents.gender}</p>
+				<p className="w-full flex flex-wrap">
+				<span className="text-2xl w-full xl:w-1/12 text-marvel-red">Name: </span> 
+				<span className="text-2xl w-full xl:w-5/6 ml-4">{modalContents.name}</span>
+				</p>
+				<p className="w-full flex flex-wrap">
+				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">Bio: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.bio}</span>
+				</p>
+				<p className="w-full flex flex-wrap">
+				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">height: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex ml-4"> {modalContents.height}</span>
+				</p>
+				<p className="w-full flex flex-wrap">
+				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">weight: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.weight}</span>
+				</p>
+				<p className="w-full flex flex-wrap">
+				<span className="text-2xl w-full  xl:w-1/12 text-marvel-red flex">gender: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.gender}</span>
+				</p>
 			</Modal>
 		</>
 	);

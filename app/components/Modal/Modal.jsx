@@ -8,10 +8,10 @@ export default function Modal(props) {
 			onClick={() => props.closeModal()}
 		>
 			<div
-				className="modal-card w-full xl:w-1/2 p8 bg-dark-grey rounded-lg border mx-auto relative p-8"
+				className="modal-card w-full xl:w-1/2 p8 bg-dark-grey rounded-lg mx-auto relative p-8 flex flex-row flex-wrap"
 			>
 				<button
-					className="close rounded-sm border"
+					className="text-neutral-800  bg-black close text-3xl font-bold rounded  px-2 absolute top-4 right-4 leading-none pb-1"
 						onClick={() => props.closeModal()}
 				>x</button>
 				{props.children}
