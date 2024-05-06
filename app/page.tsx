@@ -19,7 +19,8 @@ export default function Home() {
 					heroDescription="Celebrate Spidys 60th annivessary with most of is most iconic stories!" 
 				/>
 				<hr className="w-full h-1.5 rounded bg-gradient-to-r from-marvel-red border-none" />
-				{/* <ComicList /> */}
+				<ComicList />
+				<hr className="w-full h-1.5 rounded bg-gradient-to-r from-marvel-red border-none" />
 				<HeroList />
 				<InsiderAd />
 				<Footer />

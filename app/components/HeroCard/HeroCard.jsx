@@ -17,9 +17,6 @@ export default function HeroCard(props) {
 	const handleClick = (name) => {
 		Bios.map((bio, index) => {
 			if(bio.name === name) {
-				console.log(bio);
-				console.log(showModal);
-
 				setModalContents({
 					name: bio.name,
 					bio: bio.bio,
@@ -70,24 +67,24 @@ export default function HeroCard(props) {
 				closeModal = {() => setShowModal(false)}
 			>
 				<p className="w-full flex flex-wrap">
-				<span className="text-2xl w-full xl:w-1/12 text-marvel-red">Name: </span> 
-				<span className="text-2xl w-full xl:w-5/6 ml-4">{modalContents.name}</span>
+				<span className="text-2xl w-full xl:w-1/6 text-marvel-red flex xl:justify-end">Name: </span> 
+				<span className="text-2xl w-full xl:w-5/6 mflex pl-3">{modalContents.name}</span>
 				</p>
 				<p className="w-full flex flex-wrap">
-				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">Bio: </span>
-				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.bio}</span>
+				<span className="text-2xl w-full xl:w-1/6 text-marvel-red flex xl:justify-end">Bio: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex pl-3">{modalContents.bio}</span>
 				</p>
 				<p className="w-full flex flex-wrap">
-				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">height: </span>
-				<span className="text-2xl w-full xl:w-5/6 flex ml-4"> {modalContents.height}</span>
+				<span className="text-2xl w-full xl:w-1/6 text-marvel-red flex xl:justify-end">height: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex pl-3"> {modalContents.height}</span>
 				</p>
 				<p className="w-full flex flex-wrap">
-				<span className="text-2xl w-full xl:w-1/12 text-marvel-red flex">weight: </span>
-				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.weight}</span>
+				<span className="text-2xl w-full xl:w-1/6 text-marvel-red flex xl:justify-end">weight: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex pl-3">{modalContents.weight}</span>
 				</p>
 				<p className="w-full flex flex-wrap">
-				<span className="text-2xl w-full  xl:w-1/12 text-marvel-red flex">gender: </span>
-				<span className="text-2xl w-full xl:w-5/6 flex ml-4">{modalContents.gender}</span>
+				<span className="text-2xl w-full  xl:w-1/6 text-marvel-red flex xl:justify-end">gender: </span>
+				<span className="text-2xl w-full xl:w-5/6 flex pl-3">{modalContents.gender}</span>
 				</p>
 			</Modal>
 		</>

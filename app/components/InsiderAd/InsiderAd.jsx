@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 export default function InsiderAd(props) {
 	return (
-		<div className="insider-ad flex flex-row flex-wrap mt-32 -mx-10 2xl:-mx-20">
+		<div className="insider-ad flex flex-row flex-wrap mt-16 -mx-10 2xl:-mx-20">
 			<div className="w-full xl:w-1/2">
 				<Image 
 					src='/insider.jpg'
