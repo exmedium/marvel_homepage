@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Iron Man",
+		"bio":
+			"Genius. Billionaire. Philanthropist. Tony Stark's confidence is only matched by his high-flying abilities as the hero called Iron Man on this week's Marvel 101.",
+		"height": "6'1\" In Armor: 6'6\"",
+		"weight": "225 lbs., In Armor: 425 lbs.",
+		"gender": "Male"
+	},
+	{
+		"name": "Scarlet Witch",
+		"bio":
+			"One of the most powerful magic-wielders on the planet, the Scarlet Witch casts her spells to aid the downtrodden as an Avenger while seeking out the roots of sorcery wherever they may grow.",
+		"height": "5'7\"",
+		"weight": "132 lbs.",
+		"gender": "Female"
+	},
+	{
+		"name": "Thor",
+		"bio":
+			"Thor, the God of Thunder, the son of Odin, wields the mystical mallet Mjolnir as he protects innocents on his own and as a member of the Avengers.  This week on Marvel 101, we journey across the realms with an Asgardian prince.",
+		"height": "6'6\"",
+		"weight": "Thor: 640 lbs., Donald Blake: 150 lbs.",
+		"gender": "Male"
+	},
+	{
+		"name": "Hulk",
+		"bio":
+			"Dr. Bruce Banner lives a quiet life, until he saves the life of teenager Rick Jones from a gamma bomb explosion. After this, the mild-mannered scientist transforms into a powerful being called the Hulk whenever he gets angry.",
+		"height": "Bruce Banner: 5'9\", Hulk: 7'6\"",
+		"weight": "Bruce Banner: 128 lbs., Hulk: 1150 lbs.",
+		"gender": "Male"
+	},
+	{
+		"name": "Captian Marvel",
+		"bio":
+			"After an alien device mutated her DNA, Danvers transformed from a merely brilliant pilot into one of the most powerful Super Heroes in the universe. Now soaring among the stars, Carol Danvers is known as Captain Marvel.",
+		"height": "5'11\"",
+		"weight": "165 lbs.",
+		"gender": "Female"
+	},
+	{
+		"name":"Gamora",
+		"bio":
+			"Gamora is a trained warrior assassin, whose life under her adoptive father Thanos’ torturous wrath leads her to turn against him. Realizing the universe is threatened by powerful Infinity Stones, she takes up the mantle of Guardian of the Galaxy.",
+		"height": "6'",
+		"weight": "170 lbs.",
+		"gender": "Female"
+	},
+	{
+		"name": "Wasp",
+		"bio":
+			"Janet Van Dyne, daughter of world-renowned scientist Vernon Van Dyne, is a founding member and long-time leader of the Avengers, with the ability to shrink, fly and control insects.",
+		"height": "5'4\" (variable)",
+		"weight": "110 lbs. (variable",
+		"gender": "Female"
+	},
+	{
+		"name": "Spider-Man",
+		"bio":
+			"Bitten by a radioactive spider, Peter Parker’s arachnid abilities give him amazing powers he uses to help others, even while his personal life continues to offer plenty of obstacles.",
+		"height": "5'10\"",
+		"weight": "167 lbs.",
+		"gender": "Male"
+	}
+]

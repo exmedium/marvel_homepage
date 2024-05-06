@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+I'm not as familiar with trying to get information through a series of api calls,
+rather than writing an api endpoint (in Php) that returns the data that I want to ingest,
+in a format that is easily parsed.
 
-## Getting Started
+As such I ran into an issue with sending further requests:
+{
+  "code": "RequestThrottled",
+  "message": "You have exceeded your rate limit.  Please try again later."
+}
+that is still not allowing me new calls so I can move forward.
 
-First, run the development server:
+So until that limit has passed, (hopefully over the weekend),
+I'll not be able to make much progress on this.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It is my hope that:
+1. You will take into account the work that actually was done, and its responsivness.
+2. You will see that I was heading in the correct direction to deal with the API.
+3. You will allow that the timeframe was a bit short for the task.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Side note,
+the structure of the components with each in its own folder,
+is to allow each folder to hold it's own css, tests, etc.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I'll likely complete this excercise as soon as I'm again able to hit the API,
+and finish the expected work.

@@ -13,8 +13,8 @@ export default function ComicHero() {
 	const [comicList, setComicList] = useState([]);
 	const [offset, setOffset] = useState(0);
 
-	//character appearances data
-  useEffect(() => { // using magic number 1009610
+	//character appearances This will return the list of comic book appearances for the specified character.
+  useEffect(() => { // using magic number 1009610 for Spider-man Peter Parker
     fetch(`${characterUrl}/1009610?ts=${ts}&apikey=${publicKey}&hash=${hash}&limit=20&offset=${offset}`)
       .then((res) => {
         return res.json();
@@ -23,7 +23,7 @@ export default function ComicHero() {
         console.log('comic:', data);
         setComicList(data);
       });
-  }, [offset]);
+  }, []);
 
 	const comics = useMemo(() => {
 		return comicList?.data?.results?.[0]?.comics?.items?.map(item => {
@@ -43,7 +43,7 @@ export default function ComicHero() {
 					return comic;
 				});
 		});
-	}, [comicList]);
+	}, [offset, comicList]);
 
   return (
 		<div 
@@ -58,6 +58,8 @@ export default function ComicHero() {
 					})
 				: null
 			}
+
+			{/* It sould seem that we will likely need some pagenation here */}
 			<div 
 				className="pagination w-60 mt-12 flex flex-row justify-between mx-auto mb-12">
 				<button 
