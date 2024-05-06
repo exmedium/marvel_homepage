@@ -25,7 +25,9 @@ Thank you for your time, and consideration.
 It is my hope that:  
 1. You will take into account the work that actually was done, and its responsivness.  
 2. You will see that I was heading in the correct direction to deal with the API.  
-3. You will allow that the timeframe was a bit short for the task.  
+3. You will allow that the timeframe was a bit short for the task.
+4. You will forgive that I didn't create a "news section" as it would be much the same as the other sections,  
+   save that it would need to be hard coded, as I'm not seeing a news api.  
 
 I've for the moment, run out of time to work on this,  
 so I'm going to leave it in an as is state until I have time to revise,  
