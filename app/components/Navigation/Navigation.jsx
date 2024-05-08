@@ -21,10 +21,6 @@ export default function Navigation() {
 		setMenuState(!menuState);
 	};
 
-	useEffect(() => {
-		window.addEventListener("resize", handleResize);
-	})
-	
 	
 	return (
 		<>

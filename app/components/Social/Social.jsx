@@ -10,7 +10,7 @@ export default function Social() {
 				<div className="social-icons flex flex-wrap w-full place-content-between mt-8">
 					<a href="https://www.facebook.com/Marvel/"	name="Facebook" target="_blank" 
 						className="self-start min-w-12 rounded-full bg-white bg-opacity-10 hover:bg-opacity-20"
-						aria-label="Faceobook Link"
+						aria-label="Facebook Link"
 					>
 						<Image 
 							src="Facebook.svg" 

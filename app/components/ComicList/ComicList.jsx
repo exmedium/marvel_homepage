@@ -33,44 +33,9 @@ export default function ComicHero() {
       });
   }, [offset]);
 
-
-	/* Dummy Data for testing Layout 
-		This was necessary due to hitting the API rate limit while developing.
-		Uncommenting this and the similarly noted section below,
-		and the commented section of the Comic.jsx, 
-		will allow testing of the layout, and responsivness.
-	*/
-	/*
-		useEffect(() => { 
-			setComicList( [
-				{
-					"title": 'FREE COMIC BOOK DAY 2024: BLOOD HUNT/X-MEN (2024) #1',
-					"thumbnail": '/BloodHunt.jpg',
-					"url":'https://www.marvel.com/comics/issue/114055/free_comic_book_day_2024_blood_huntx-men_2024_1'
-				},
-				{
-					"title": 'BLOOD HUNT/X-MEN (2024) #1',
-					"thumbnail": '/BloodHunt.jpg',
-					"url":'https://www.marvel.com/comics/issue/114055/free_comic_book_day_2024_blood_huntx-men_2024_1'
-				},
-				{
-					"title": 'BLOOD HUNT/X-MEN (2024) #1',
-					"thumbnail": '/BloodHunt.jpg',
-					"url":'https://www.marvel.com/comics/issue/114055/free_comic_book_day_2024_blood_huntx-men_2024_1'
-				},
-				{
-					"title": 'BLOOD HUNT/X-MEN (2024) #1',
-					"thumbnail": '/BloodHunt.jpg',
-					"url":'https://www.marvel.com/comics/issue/114055/free_comic_book_day_2024_blood_huntx-men_2024_1'
-				}
-			]);
-		}, [offset]);
-	*/
-
-
   return (
 		<div 
-			className="comics-list w-full flex flex-row flex-wrap justify-between mx-auto"
+			className="comics-list w-full flex flex-row flex-wrap justify-between mx-auto pb-16"
 		>
 
 			{
@@ -86,22 +51,6 @@ export default function ComicHero() {
 				: null
 			}
 
-			{/* Dummy Data for testing layout */}
-			{/* {
-				comicList.map((comic, index) => (
-					<Comic
-						key={index}
-						title={comic.title}
-						thumbnail={comic.thumbnail}
-						url={comic.url}
-					/>
-				))
-			} */}
-
-			{/* 
-				It wasn't in the instructions, 
-				but it would seem that we will likely need some pagenation here. 
-			*/}
 			<div 
 				className={`flex justify-center w-full p-0 ${comicList.length > 0 ? '' : 'hidden'}`}
 			>

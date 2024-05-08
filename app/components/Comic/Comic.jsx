@@ -25,9 +25,10 @@ export default function Hero(props) {
 						title: data.data.results[0].title,
 						thumbnail: data.data.results[0].thumbnail.path + '.' + data.data.results[0].thumbnail.extension
 					});
-	}, [props.url]);
+	}, []);
+});
 
-		return (
+	return (
 		<a 
 			href={props.url}
 			className="comicbook w-full md:w-1/3 flex flex-col mt-16 px-4 hover:opacity-70"
@@ -71,5 +72,5 @@ export default function Hero(props) {
 		)
 	*/}
 
-	});
+	
 }
