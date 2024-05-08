@@ -69,59 +69,62 @@ export default function ComicHero() {
 
 
   return (
-		<div 
-			className="comics-list w-full flex flex-row flex-wrap justify-between mx-auto pb-16"
-		>
-
-			{
-				comicList ?
-					comicList?.data?.results?.[0]?.comics?.items?.map((item, comicId) => {
-						return (
-							<Comic
-								key={comicId}
-								url={item.resourceURI}
-							/>
-						)
-					})
-				: null
-			}
-
-			{/* Dummy Data for testing layout */}
-			{/* {
-				comicList.map((comic, index) => (
-					<Comic
-						key={index}
-						title={comic.title}
-						thumbnail={comic.thumbnail}
-						url={comic.url}
-					/>
-				))
-			} */}
-
-			{/* 
-				It wasn't in the instructions, 
-				but it would seem that we will likely need some pagenation here. 
-			*/}
+		<>
 			<div 
-				className={`flex justify-center w-full p-0 ${comicList.length > 0 ? '' : 'hidden'}`}
+				className="comics-list w-full flex flex-row flex-wrap justify-between mx-auto pb-16"
 			>
+
+				{
+					comicList ?
+						comicList?.data?.results?.[0]?.comics?.items?.map((item, comicId) => {
+							return (
+								<Comic
+									key={comicId}
+									url={item.resourceURI}
+								/>
+							)
+						})
+					: null
+				}
+
+				{/* Dummy Data for testing layout */}
+				{/* {
+					comicList.map((comic, index) => (
+						<Comic
+							key={index}
+							title={comic.title}
+							thumbnail={comic.thumbnail}
+							url={comic.url}
+						/>
+					))
+				} */}
+
+				{/* 
+					It wasn't in the instructions, 
+					but it would seem that we will likely need some pagenation here. 
+				*/}
 				<div 
-					className="pagination w-60  flex flex-row justify-between mx-auto my-12">
-					<button 
-						className="bg-marvel-red hover:bg-marvel-hover text-white text-2xl self-start rounded-lg py-4 px-6 m-0"
-						onClick={() => offset > 19 ? setOffset(offset - 20) : 0}
-					>
-						Prev
-					</button>
-					<button 
-						className="bg-marvel-red hover:bg-marvel-hover text-white text-2xl self-start rounded-lg py-4 px-6 m-0"
-						onClick={() => setOffset(offset + 20)}
-					>
-						Next
-					</button>
+					className={`flex justify-center w-full p-0 ${comicList.length > 0 ? '' : 'hidden'}`}
+				>
+					<div 
+						className="pagination w-60  flex flex-row justify-between mx-auto my-12">
+						<button 
+							className="bg-marvel-red hover:bg-marvel-hover text-white text-2xl self-start rounded-lg py-4 px-6 m-0"
+							onClick={() => offset > 19 ? setOffset(offset - 20) : 0}
+						>
+							Prev
+						</button>
+						<button 
+							className="bg-marvel-red hover:bg-marvel-hover text-white text-2xl self-start rounded-lg py-4 px-6 m-0"
+							onClick={() => setOffset(offset + 20)}
+						>
+							Next
+						</button>
+					</div>
 				</div>
 			</div>
-		</div>
+			<hr className={`w-full h-1.5 rounded bg-gradient-to-r from-marvel-red border-none ${comicList.length > 0 ? '' : 'hidden'}`} />
+		</>
 	);
 };
 

@@ -20,7 +20,6 @@ export default function Home() {
 				/>
 				<hr className="w-full h-1.5 rounded bg-gradient-to-r from-marvel-red border-none" />
 				<ComicList />
-				<hr className="w-full h-1.5 rounded bg-gradient-to-r from-marvel-red border-none" />
 				<HeroList />
 				<InsiderAd />
 				<Footer />
